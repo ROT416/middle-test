@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>G.O.T.Y GAMES</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <img src="img/bg.png" id="bg" alt="">
+    <h1><a href="index.html" id="header"> G O T Y · G A M E S </a></h1>
+    <div>
+
+      <div id = "menu">
+        <ol>
+          <li><a href="page1.html"> GAME OF THE YEAR </a></li>
+          <li><a href="page2.html"> 역대 고티 게임들 </a></li>
+          <li><a href="page3.html"> 올해 고티 예상작 </a></li>
+        </ol>
+      </div>
+
+
+      <div class="gamelist">
+        <h2>< 올해 GOTY 예상 작품들 > </h2><br>
+        <span class="tab">분류 ▶ </span>
+        <input type = "radio" name="chk" value="전체 선택" onclick="
+          var all = document.querySelectorAll('.page3img');
+          if(this.checked){
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline';
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline-block';
+          }
+        " /> <span class="tab">모든 게임</span>
+        <input type = "radio" name="chk" value="발매된 게임" onclick="
+          var a = document.querySelectorAll('.Released');
+          var all = document.querySelectorAll('.page3img');
+          if(this.checked){
+            for (i = 0; i < all.length; i++)  all[i].style.display='none';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline-block';
+          }else{
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline';
+              for (i = 0; i < all.length; i++)  all[i].style.display='inline-block';
+          }
+        " /> <span class="tab">현재 발매된 게임</span>
+
+        <input type = "radio" name="chk" value="발매 예정 게임" onclick="
+          var a = document.querySelectorAll('.NoReleased');
+          var all = document.querySelectorAll('.page3img');
+          if(this.checked){
+            for (i = 0; i < all.length; i++)  all[i].style.display='none';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline-block';
+          }else{
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline';
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline-block';
+          }
+        " /> <span class="tab">발매 예정 게임 </span>
+
+
+
+        <input type = "radio" name="chk" value="RPG" onclick="
+          var a = document.querySelectorAll('.RPG');
+          var all = document.querySelectorAll('.page3img');
+          if(this.checked){
+            for (i = 0; i < all.length; i++)  all[i].style.display='none';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline-block';
+          }else{
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline';
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline-block';
+          }
+        " /> <span class="tab">RPG</span>
+
+        <input type = "radio" name="chk" value="FPS" onclick="
+          var a = document.querySelectorAll('.FPS');
+          var all = document.querySelectorAll('.page3img');
+          if(this.checked){
+            for (i = 0; i < all.length; i++)  all[i].style.display='none';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline-block';
+          }else{
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline';
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline-block';
+          }
+        " /> <span class="tab">FPS</span>
+
+        <input type = "radio" name="chk" value="ADV" onclick="
+          var a = document.querySelectorAll('.ADV');
+          var all = document.querySelectorAll('.page3img');
+          if(this.checked){
+            for (i = 0; i < all.length; i++)  all[i].style.display='none';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline';
+            for (j = 0; j < a.length; j++)  a[j].style.display='inline-block';
+          }else{
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline';
+            for (i = 0; i < all.length; i++)  all[i].style.display='inline-block';
+          }
+        " /> <span class="tab">어드벤처</span>
+
+        <script>
+          var movies = ["https://www.youtube.com/embed/Qrz3zysD7cU", "https://www.youtube.com/embed/7vfeo5AU_io", "https://www.youtube.com/embed/VrwEw-3__No", "https://www.youtube.com/embed/3jhNbK7ishA", "https://www.youtube.com/embed/yS60w5GFvjM", "https://www.youtube.com/embed/Lmv3wPNOmBk","https://www.youtube.com/embed/iTdMhxRYXkw" ];
+          var movietag = ['<iframe display="none" width="960" height="540" src="', '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'];
+        </script>
+
+        <br><br>
+        <div id="movie">
+          게임 이미지를 클릭하면 해당 게임의 트레일러를 볼 수 있습니다.
+        </div><br>
+
+        <a href="#" onclick="var i=0; document.getElementById('movie').innerHTML = movietag[0]+movies[i]+movietag[1];">
+          <div class="page3img Released RPG"><img src="img/moster.jpg">
+          <br>[ 몬스터 헌터: 월드 ]<br></div>
+        </a>
+        <a href="#" onclick="var i=1;  document.getElementById('movie').innerHTML = movietag[0]+movies[i]+movietag[1];">
+          <div class="page3img Released ADV"><img src="img/farcry.jpg">
+          <br>[ 파 크라이 5 ]<br></div>
+        </a>
+        <a href="#" onclick="var i=2;  document.getElementById('movie').innerHTML = movietag[0]+movies[i]+movietag[1];">
+          <div class="page3img Released ADV"><img src="img/awayout.jpg">
+          <br>[ 어 웨이 아웃 ]<br></div>
+        </a>
+        <a href="#" onclick="var i=3;  document.getElementById('movie').innerHTML = movietag[0]+movies[i]+movietag[1];">
+          <div class="page3img Released ADV"> <img src="img/god.jpg">
+          <br>[ 갓 오브 워 4 ]<br></div>
+        </a>
+        <a href="#" onclick="var i=4;  document.getElementById('movie').innerHTML = movietag[0]+movies[i]+movietag[1];">
+          <div class="page3img NoReleased ADV"><img src="img/detroit.jpg">
+          <br>[ 디트로이트 : 비컴 휴먼 ]<br></div>
+        </a>
+        <a href="#" onclick="var i=5;  document.getElementById('movie').innerHTML = movietag[0]+movies[i]+movietag[1];">
+          <div class="page3img NoReleased ADV"><img src="img/reddead.jpg">
+          <br>[ 레드 데드 리뎀션 2 ]<br></div>
+        </a>
+        <a href="#" onclick="var i=6;  document.getElementById('movie').innerHTML = movietag[0]+movies[i]+movietag[1];">
+          <div class="page3img NoReleased FPS"><img src="img/metro.jpg">
+          <br>[ 메트로: 엑소더스 ]<br></div>
+        </a>
+      </div>
+
+      <br><br><br><br>
+
+
+
+
+    </div>
+  </body>
+</html>

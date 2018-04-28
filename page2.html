@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>G.O.T.Y GAMES</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="frame">
+    <img src="img/bg.png" id="bg" alt="">
+    <h1><a href="index.html" id="header"> G O T Y · G A M E S </a></h1>
+    <div id ="grid">
+
+      <div>
+        <ol class="menus">
+          <li><a href="page1.html"> GAME OF THE YEAR </a></li>
+          <li><a href="page2.html"> 역대 고티 게임들 </a></li>
+          <li><a href="page3.html"> 올해 고티 예상작 </a></li>
+        </ol>
+      </div>
+
+
+      <div id="article">
+
+        <div id="years">
+          <ol>
+            <li><a href="#" onclick="
+              document.querySelector('#page2main').style.display ='none';
+              if (document.querySelector('#games2017').style.display='none'){
+                document.querySelector('#games2017').style.display ='inline';
+                document.querySelector('#games2016').style.display ='none';
+                document.querySelector('#games2015').style.display ='none';
+                document.querySelector('#games2014').style.display ='none';
+
+              }"> 2017 </a></li>
+
+            <li><a href="#" onclick="
+              document.querySelector('#page2main').style.display ='none';
+              var target = document.querySelector('#games2016');
+              if (document.querySelector('#games2016').style.display='none'){
+                document.querySelector('#games2016').style.display ='inline';
+                document.querySelector('#games2017').style.display ='none';
+                document.querySelector('#games2015').style.display ='none';
+                document.querySelector('#games2014').style.display ='none';
+
+              }"> 2016 </a></li>
+
+            <li><a href="#" onclick="
+              document.querySelector('#page2main').style.display ='none';
+              var target = document.querySelector('#games2015');
+              if (document.querySelector('#games2015').style.display='none'){
+                document.querySelector('#games2015').style.display ='inline';
+                document.querySelector('#games2017').style.display ='none';
+                document.querySelector('#games2016').style.display ='none';
+                document.querySelector('#games2014').style.display ='none';
+
+              }"> 2015 </a></li>
+
+            <li><a href="#" onclick="
+              document.querySelector('#page2main').style.display ='none';
+              var target = document.querySelector('#games2014');
+              if (document.querySelector('#games2014').style.display='none'){
+                document.querySelector('#games2014').style.display ='inline';
+                document.querySelector('#games2017').style.display ='none';
+                document.querySelector('#games2015').style.display ='none';
+                document.querySelector('#games2016').style.display ='none';
+
+              }"> 2014 </a></li>
+          </ol>
+        </div>
+
+
+        <div id="page2main">
+          <br><br><br><br>연도를 선택해주세요!<br><br><br>
+        </div>
+
+        <div id="gotys">
+          <p id="games2017">
+            < 2017년도 최다 GOTY 수상작 > <br>
+            <a href="game2017.html"><img src="img/2017.png" id="indeximg"></a>
+            <a href="game2017.html">: 젤다의 전설 브레스 오브 더 와일드 </a>
+            <br><br><span>*</span><br><br>
+            < 2017년도 GOTY 수상 현황 ><br><br>
+            <span>
+              <script>
+                var goty2017 = ['젤다의 전설 브레스 오브 더 와일드', '호라이즌 제로 던', '슈퍼 마리오 오디세이', '니어:오토마타, 페르소나 5', "PLAYERUNKNOWN'S BATTLEGROUNDS", '어쌔신 크리드: 오리진, 디비니티: 오리지널 신 2' ];
+                var goty2017num = ['189','53','26','12','10','7'];
+
+                var i = 0;
+                while (i < goty2017.length ) {
+                  document.write((i+1)+'위 : '+goty2017[i]+'   / 수상 개수 : '+goty2017num[i]+'개 <br>');
+                  i = i + 1;
+                }
+              </script>
+            </span>
+            <br><br><br><br>
+          </p>
+
+          <p id="games2016">
+            < 2016년도 최다 GOTY 수상작 > <br>
+            <a href="game2017.html"><img src="img/2016.png" id="indeximg"></a>
+            <a href="game2016.html">: 언차티드 4: 해적왕과 최후의 보물 </a>
+            <br><br><span>*</span><br><br>
+            < 2016년도 GOTY 수상 현황 ><br><br>
+            <span>
+              <script>
+                var goty2016 = ['언차티드 4: 해적왕과 최후의 보물', '오버워치', '둠', '배틀필드1', "더 라스트 가디언", 'INSIDE, 다크 소울 3', '파이널 판타지 15, 더 위쳐 3: 블러드 앤 와인' ];
+                var goty2016num = ['165','102','29','16','15','12','9'];
+
+                var j = 0;
+                while (j < goty2016.length ) {
+                  document.write((j+1)+'위 : '+goty2016[j]+'   / 수상 개수 : '+goty2016num[j]+'개 <br>');
+                  j = j + 1;
+                }
+              </script>
+            </span>
+            <br><br><br><br>
+          </p>
+
+          <p id="games2015">
+            < 2015년도 최다 GOTY 수상작 > <br>
+            <a href="game2017.html"><img src="img/2015.png" id="indeximg"></a>
+            <a href="game2015.html">: 더 위쳐 3: 와일드 헌트 </a>
+            <br><br><span>*</span><br><br>
+            < 2015년도 GOTY 수상 현황 ><br><br>
+            <span>
+              <script>
+                var goty2015 = ['더 위쳐 3: 와일드 헌트', '폴아웃 4', '블러드본', '메탈기어 솔리드 V 더 팬텀 페인', "Life is Strange", '슈퍼 마리오 메이커, 언더테일', '로켓 리그' ];
+                var goty2015num = ['257','58','31','29','12','8','7'];
+
+                var k = 0;
+                while (k < goty2015.length ) {
+                  document.write((k+1)+'위 : '+goty2015[k]+'   / 수상 개수 : '+goty2015num[k]+'개 <br>');
+                  k = k + 1;
+                }
+              </script>
+            </span>
+            <br><br><br><br>
+          </p>
+
+          <p id="games2014">
+            < 2014년도 최다 GOTY 수상작 > <br>
+            <img src="img/2014.png" id="indeximg">
+            <a href="game2014.html">: 드래곤 에이지: 인퀴지션 </a>
+            <br><br><span>*</span><br><br>
+            < 2014년도 GOTY 수상 현황 ><br><br>
+            <span>
+              <script>
+                var goty2014 = ['드래곤 에이지: 인퀴지션', '미들 어스: 섀도우 오브 모르도르', '마리오 카트 8, 슈퍼 스매시브라더스', '파 크라이 4', "에일리언: 아이솔레이션", '베요네타 2', '다크 소울 2' ];
+                var goty2014num = ['134','49','28','26','23','22','15'];
+
+                var l = 0;
+                while (l < goty2014.length ) {
+                  document.write((l+1)+'위 : '+goty2014[l]+'   / 수상 개수 : '+goty2014num[l]+'개 <br>');
+                  l = l + 1;
+                  }
+              </script>
+            </span>
+            <br><br><br><br>
+          </p>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </body>
+</html>

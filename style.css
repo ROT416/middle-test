@@ -1,0 +1,223 @@
+/* 하이퍼링크 */
+a {
+  color:black;
+  text-decoration: none;
+}
+
+#header {
+  color:white;
+  font-size: 50px;
+}
+
+
+
+/* 메인 타이틀 */
+h1 {
+  color:white;
+  text-align: center;
+
+  display: block;
+  width: 500px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #252525;
+}
+
+
+/* 메인 메뉴 */
+li{
+  color:black;
+  text-align: center;
+  font-weight:bold;
+
+
+  padding-left:30px;
+  padding-right:30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display:inline-block;
+}
+
+ol {
+  text-align: center;
+
+  display: block;
+  width:80%;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+}
+
+
+
+
+/* 본문 */
+#article, .gamelist{
+  color: #3C3C3C;
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 100px;
+  line-height:2.3em;
+}
+
+h2 {
+  color: #d63636;
+  font-size: 34px;
+}
+
+
+/*page1 */
+
+
+
+/* page2 */
+#page2main{
+  display:grid;
+  font-size: 20px;
+  color:#252525;
+  width:65%;
+  padding-right: 10%
+  float: left;
+}
+
+#years {
+  display: grid;
+  float:left;
+  width:15%;
+  padding-left: 10%;
+  height: 500px;
+}
+#years ol{
+   list-style:none;
+   border: none;
+   border-right: 1px solid black;
+}
+#years li{
+  display:grid;
+}
+
+#gotys {
+  display: grid;
+  float: left;
+  width:65%;
+  padding-right: 10%
+}
+#gotys p{
+  display: none;
+  line-height:2.5em;
+  font-size: 27px;
+  font-weight: bold;
+  color:#252525;
+}
+#gotys a{
+  color:white;
+  font-weight: 200;
+  background-color: #252525;
+}
+#gotys span{
+  font-size: 16px;
+  font-weight: normal;
+  line-height:2em;
+}
+
+
+/* page3 */
+#movie, .gamelist{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.gamelist{
+  width: 70%;
+}
+
+.page3img{
+  margin: 20px;
+  display: inline-block;
+}
+
+.tab{
+  padding-right: 1.8em;
+}
+
+
+
+/* 배경 이미지 */
+#bg {
+  top: 0; /*이미지의 초기 좌표*/
+  left: 0;
+  position: fixed; /*이미지 좌표 고정*/
+  z-index: -1; /* 이미지를 글 뒤로 */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*인덱스 페이지 이미지*/
+#indeximg {
+  padding-top: 50px;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media(max-width:1200px){
+  #indeximg {
+    width: 100%;
+  }
+}
+
+
+/* 본문 안 이미지 */
+.gameimg {
+  text-align: center;
+}
+
+
+
+/* 모바일 버전 */
+@media(max-width:850px){
+  #header {
+    font-size: 30px;
+  }
+  h1{
+    width: 70%;
+  }
+  li {
+      padding-left:16px;
+      padding-right:16px;
+  }
+  #page2main{
+    width: 100%;
+    display: block;
+  }
+  #gotys{
+    width: 100%;
+    display: block;
+  }
+  #years li{
+    display:inline-block;
+  }
+  #years {
+    width: 100%;
+    height: 150px;
+    padding-left: 0;
+  }
+
+  #years ol{
+     border-right: none;
+     height: auto;
+  }
+
+}
