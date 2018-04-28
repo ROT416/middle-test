@@ -9,6 +9,11 @@ a {
   font-size: 50px;
 }
 
+html {
+ background: url(img/bg.png) no-repeat center center fixed;
+ background-size: cover;
+}
+
 
 
 /* 메인 타이틀 */
@@ -69,8 +74,9 @@ ol {
 }
 
 h2 {
-  color: #d63636;
+  color: black;
   font-size: 34px;
+  font-weight: 200;
 }
 
 
@@ -112,20 +118,22 @@ h2 {
 }
 #gotys p{
   display: none;
-  line-height:2.5em;
-  font-size: 27px;
-  font-weight: bold;
+  line-height:1.3em;
+
+  color: black;
+  font-size: 34px;
+  font-weight: 200;
   color:#252525;
 }
 #gotys a{
   color:white;
   font-weight: 200;
+  font-size: 28px;
   background-color: #252525;
 }
 #gotys span{
   font-size: 16px;
   font-weight: normal;
-  line-height:2em;
 }
 
 
@@ -140,6 +148,7 @@ h2 {
 
 .gamelist{
   width: 70%;
+  line-height:3em;
 }
 
 .page3img{
