@@ -35,30 +35,28 @@ h1 {
 
 /* 메인 메뉴 */
 li{
-  color:black;
   text-align: center;
+  display:inline-block;
+
+  color:black;
   font-weight:bold;
-
-
   padding-left:30px;
   padding-right:30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  display:inline-block;
 }
 
 ol {
-  text-align: center;
-
   display: block;
   width:80%;
-  padding: 15px;
   margin-left: auto;
   margin-right: auto;
 
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 
+  text-align: center;
+  padding: 15px;
 }
 
 
@@ -92,6 +90,11 @@ h2 {
   width:65%;
   padding-right: 10%
   float: left;
+}
+#page2img{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #years {
@@ -210,6 +213,9 @@ h2 {
   #page2main{
     width: 100%;
     display: block;
+  }
+  #page2img{
+    width: 100%;
   }
   #gotys{
     width: 100%;
