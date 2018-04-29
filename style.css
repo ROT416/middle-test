@@ -138,6 +138,13 @@ h2 {
   font-size: 16px;
   font-weight: normal;
 }
+#gotys img{
+  padding-top: 50px;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 
 /* page3 */
@@ -199,7 +206,7 @@ h2 {
 
 
 /* 모바일 버전 */
-@media(max-width:900px){
+@media(max-width:1000px){
   #header {
     font-size: 30px;
   }
@@ -221,6 +228,9 @@ h2 {
     width: 100%;
     display: block;
   }
+  #gotys img{
+    width: 80%;
+  }
   #years li{
     display:inline-block;
   }
@@ -234,5 +244,6 @@ h2 {
      border-right: none;
      height: auto;
   }
+
 
 }
